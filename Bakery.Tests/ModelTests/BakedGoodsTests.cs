@@ -28,11 +28,13 @@ namespace Bakery.Test
 
       //Act
       string expected = newBread.BreadName;
-      // string actualResult = newBread.Bread(breadName, description, price);
-      // string anticipatedResult = breadName, description, price;
+      string expected2 = newBread.Description;
+      int expected3 = newBread.Price;
 
       // Assert
-      Assert.AreEqual(result, testBreadName);
+      Assert.AreEqual(expected, testBreadName);
+      Assert.AreEqual(expected2, testDescription);
+      Assert.AreEqual(expected3, testPrice);
     }
     // Tests
   }

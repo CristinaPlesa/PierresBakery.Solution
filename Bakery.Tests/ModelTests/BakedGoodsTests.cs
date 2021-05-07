@@ -5,15 +5,15 @@ using Bakery.Models;
 namespace Bakery.Test
 {
   [TestClass]
-  public class BakedGoodsTests
+  public class BreadTests
   {
     [TestMethod]
-    public void BakedGoodsConstructor_CreatesInstanceOfBakedGoods_BakedGoods()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       // Arrange/Act
-      BakedGoods newBakedGoods = new BakedGoods();
+      Bread newBread = new Bread();
       // Assert
-      Assert.AreEqual(typeof(BakedGoods), newBakedGoods.GetType());
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     // Tests
   }

@@ -34,25 +34,23 @@ namespace Bakery.Test
       Assert.AreEqual(testPrice, newBread.Price);
     }
 
-    // [TestMethod]
-    // public void GetBreadPrice_ReturnsCorrectPriceForMultipleInputtedLoaves_Price()
-    // {
-    //   // Arrange
-    //   string testBreadName = "Colac";
-    //   string testDescription = "Traditional Romanian sweet bread. It is made from whole wheat flour and is braided in a circle. Traditionally this bread is made for special occasions, but we make it fresh daily!";
-    //   int testPrice = 5;
-    //   Bread newBread = new Bread(testBreadName, testDescription, testPrice);
+    [TestMethod]
+    public void SetBreadPrice_ReturnsCorrectPriceForMultipleInputtedLoaves_Price()
+    {
+      // Arrange
+      string testBreadName = "Colac";
+      string testDescription = "Traditional Romanian sweet bread. It is made from whole wheat flour and is braided in a circle. Traditionally this bread is made for special occasions, but we make it fresh daily!";
+      int testNewSetPrice = 5;
+      Bread newBread = new Bread(testBreadName, testDescription, testNewSetPrice);
 
-    //   //Act
-    //   string expected = newBread.BreadName;
-    //   string expected2 = newBread.Description;
-    //   int expected3 = newBread.Price;
+      //Act
+      int userPriceOf3Loaves = 10;
+      int result = newBread.SetBreadPrice(testNewSetPrice);
+      // newBreadPrice
 
-    //   // Assert
-    //   Assert.AreEqual(expected, testBreadName);
-    //   Assert.AreEqual(expected2, testDescription);
-    //   Assert.AreEqual(expected3, testPrice);
-    // }
+      // Assert
+      Assert.AreEqual(userPriceOf3Loaves, result);
+    }
     // Tests
   }
 }

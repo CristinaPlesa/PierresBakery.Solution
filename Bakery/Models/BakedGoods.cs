@@ -7,17 +7,17 @@ namespace Bakery.Models
   {
     public string BreadName { get ; }
     public string Description { get ; }
-    public int Price { get; }
-    // { 
-    //   get
-    //   {
-    //     return Price;
-    //   }
-    //   set
-    //   {
-    //     Price = value;
-    //   }
-    // }
+    public int Price
+    { 
+      get
+      {
+        return Price;
+      }
+      set
+      {
+        Price = value;
+      }
+    }
 
     public Bread(string breadName, string description, int price)
     {
@@ -26,11 +26,13 @@ namespace Bakery.Models
       Price = price;
     }
 
-    // public int GetBreadPrice(int userNumberOfLoaves)
-    // {
-    //   // return (Price * userNumberOfLoaves);
-    //   // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.
-    // }
+    public int SetBreadPrice(int userNumberOfLoaves)
+    {
+      return (Price * userNumberOfLoaves);
+    }
+
+      // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.
+      // maybe it won't actually be a if conditional, but a loop that skips at every number divisable by 3. Similar to Mr. Roboger's project. Look to see how that one was flushed out.
   }
 
   // public class Pastry. Do the same for this class, create constructor, then create a few new object instances of different pastries. Must test bread one first tho. Will it work to have two classes in the same file?

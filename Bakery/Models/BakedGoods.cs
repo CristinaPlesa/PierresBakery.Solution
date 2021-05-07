@@ -26,10 +26,11 @@ namespace Bakery.Models
       Price = price;
     }
 
-    public int GetBreadPrice(int userNumberOfLoaves)
-    {
-      // return (Price * userNumberOfLoaves);
-    }
+    // public int GetBreadPrice(int userNumberOfLoaves)
+    // {
+    //   // return (Price * userNumberOfLoaves);
+    //   // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.
+    // }
   }
 
   // public class Pastry. Do the same for this class, create constructor, then create a few new object instances of different pastries. Must test bread one first tho. Will it work to have two classes in the same file?

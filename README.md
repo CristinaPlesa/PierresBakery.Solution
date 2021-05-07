@@ -2,9 +2,9 @@
 
 #### By Cristina Plesa
 
-#### Description
+#### A C# application that prompts users on how much baked goods they would like to purchase. It will display the total cost of their order after input.
 
-### Technologies Used
+## Technologies Used
 
 * C#
 * .NET 5 SDK
@@ -37,15 +37,15 @@
   * Run the command dotnet restore to restore the dependencies that are listed in {Template.Tests.csproj}
   * Finally, run the command dotnet test to run the tests!
 
-### Known Bugs
+## Known Bugs
 
 * No known bugs
 
-### License
+## License
 
 MIT Copyright (c) 2021 Cristina Plesa
 
-### Contact Information
+## Contact Information
 
 Please reach out through my GitHub account.
 {github.com/CristinaPlesa}https://github.com/CristinaPlesa

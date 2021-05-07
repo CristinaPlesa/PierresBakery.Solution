@@ -47,8 +47,6 @@ namespace Bakery.Test
       //Act
       int userPriceOf3Loaves = 10;
       int result = newBread.SetBreadPrice(userNumberOfLoaves);
-      // newBreadPrice
-
       // Assert
       Assert.AreEqual(userPriceOf3Loaves, result);
     }

@@ -10,7 +10,9 @@ namespace Bakery.Test
     [TestMethod]
     public void BakedGoodsConstructor_CreatesInstanceOfBakedGoods_BakedGoods()
     {
+      // Arrange/Act
       BakedGoods newBakedGoods = new BakedGoods();
+      // Assert
       Assert.AreEqual(typeof(BakedGoods), newBakedGoods.GetType());
     }
     // Tests

@@ -30,14 +30,16 @@ namespace Bakery.Models
 
     public int SetBreadPrice(int userNumberOfLoaves)
     {
-      return (Price * userNumberOfLoaves);
+      for (int i = 0; i < userNumberOfLoaves.Length; i++)
+      // if (userNumberOfLoaves.Length )
+      return (Price * userNumberOfLoaves); //this will not longer work I think. A loop can accrue $5 each time through, except the first time and every 3rd in a set of three.
     }
 
       // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.
-      // maybe it won't actually be a if conditional, but a loop that skips at every number divisable by 3. Similar to Mr. Roboger's project. Look to see how that one was flushed out.
+      // maybe it won't actually be a if conditional, but a loop that skips at every number divisible by 3. Similar to Mr. Roboger's project. Look to see how that one was flushed out.
   }
 
   // public class Pastry. Do the same for this class, create constructor, then create a few new object instances of different pastries. Must test bread one first tho. Will it work to have two classes in the same file?
 
-  // Like in To Do example do I have to create a list in order to be able to access multiple fields in constructor? Specifically in testing.
+  // Like in To Do example do I have to create a list in order to be able to access multiple fields in constructor? Specifically in testing. 
 }

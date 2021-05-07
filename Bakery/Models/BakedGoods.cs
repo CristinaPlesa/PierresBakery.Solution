@@ -30,9 +30,19 @@ namespace Bakery.Models
 
     public int SetBreadPrice(int userNumberOfLoaves)
     {
-      for (int i = 0; i < userNumberOfLoaves.Length; i++)
+      for(int i = 1; i < userNumberOfLoaves; i++)
+      {
+        if (i % 3 == 0)
+        {
+          Price += 0;
+        }
+        else
+        {
+          Price += 5;
+        }
+      }
       // if (userNumberOfLoaves.Length )
-      return (Price * userNumberOfLoaves); //this will not longer work I think. A loop can accrue $5 each time through, except the first time and every 3rd in a set of three.
+      return Price; //this will no longer work I think. A loop can accrue $5 each time through, except the first time and every 3rd in a set of three.
     }
 
       // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.

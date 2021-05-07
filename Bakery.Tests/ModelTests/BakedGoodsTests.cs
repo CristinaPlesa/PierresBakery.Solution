@@ -12,7 +12,7 @@ namespace Bakery.Test
     public void BreadClass_CreatesInstanceOfBread_Bread()
     {
       // Arrange/Act
-      Bread newBread = new Bread("test", "test", 1);
+      Bread newBread = new Bread("test", "test", 5);
       // Assert
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
@@ -40,7 +40,7 @@ namespace Bakery.Test
       // Arrange
       string testBreadName = "Colac";
       string testDescription = "Traditional Romanian sweet bread. It is made from whole wheat flour and is braided in a circle. Traditionally this bread is made for special occasions, but we make it fresh daily!";
-      int testPrice = 5;
+      int testPrice = 0;
       Bread newBread = new Bread(testBreadName, testDescription, testPrice);
       int userNumberOfLoaves = 3;
 

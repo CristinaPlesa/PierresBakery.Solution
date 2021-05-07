@@ -7,15 +7,17 @@ namespace Bakery.Models
   {
     public string BreadName { get ; }
     public string Description { get ; }
+
+    private int _price;
     public int Price
     { 
       get
       {
-        return Price;
+        return _price;
       }
       set
       {
-        Price = value;
+        _price = value;
       }
     }
 

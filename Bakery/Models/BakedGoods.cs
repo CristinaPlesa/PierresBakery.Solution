@@ -5,6 +5,10 @@ namespace Bakery.Models
 {
   public class Bread
   {
+    public Bread(string breadName, string description, int price)
+    {
+      return;
+    }
     // Code for constructor would go here, but should I forgo the constructor and just use two classes?
   }
 

@@ -47,7 +47,10 @@ namespace Bakery.Models
 
   public class Pastry
   {
-    
+    public Pastry(string pastryName, string description, int price)
+    {
+      return;
+    }
   }
 }
 

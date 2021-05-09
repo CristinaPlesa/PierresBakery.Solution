@@ -9,7 +9,7 @@ namespace Bakery.Test
   public class BreadTests
   {
     [TestMethod]
-    public void BreadClass_CreatesInstanceOfBread_Bread()
+    public void BreadClass_CreatesClassForBread_Bread()
     {
       // Arrange/Act
       Bread newBread = new Bread("test", "test", 5);
@@ -53,12 +53,27 @@ namespace Bakery.Test
   public class PastryTests
   {
     [TestMethod]
-    public void PastryClass_CreatesInstanceOfPastries_Pastry()
+    public void PastryClass_CreatesClassForPastries_Pastry()
     {
       // Arrange/Act
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry("test", "test", 2);
       // Assert
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+
+    [TestMethod]
+    public void Pastry_CreatesInstanceOfPastry_Pastry()
+    {
+      // Arrange
+      string testPastryName = "Galuste cu Prune";
+      string testDescription = "Traditional Romanian sweet Pastry. It is made from whole wheat flour and is braided in a circle. Traditionally this Pastry is made for special occasions, but we make it fresh daily!";
+      int testPrice = 2;
+      //Act
+      Pastry newPastry = new Pastry(testPastryName, testDescription, testPrice);
+      // Assert
+      Assert.AreEqual(testPastryName, newPastry);
+      Assert.AreEqual(testDescription, newPastry);
+      Assert.AreEqual(testPrice, newPastry);
     }
   }
 }

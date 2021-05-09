@@ -25,7 +25,7 @@ namespace Bakery.Models
     {
       BreadName = breadName;
       Description = description;
-      Price = price;
+      _price = price;
     }
 
     public int SetBreadPrice(int userNumberOfLoaves)
@@ -43,7 +43,11 @@ namespace Bakery.Models
       }
       return Price;
     }
+  }
 
+  public class Pastry
+  {
+    
   }
 }
 

@@ -24,10 +24,8 @@ namespace Bakery.Test
       string testBreadName = "Colac";
       string testDescription = "Traditional Romanian sweet bread. It is made from whole wheat flour and is braided in a circle. Traditionally this bread is made for special occasions, but we make it fresh daily!";
       int testPrice = 5;
-
       //Act
       Bread newBread = new Bread(testBreadName, testDescription, testPrice);
-   
       // Assert
       Assert.AreEqual(testBreadName, newBread.BreadName);
       Assert.AreEqual(testDescription, newBread.Description);
@@ -43,13 +41,24 @@ namespace Bakery.Test
       int testPrice = 0;
       Bread newBread = new Bread(testBreadName, testDescription, testPrice);
       int userNumberOfLoaves = 3;
-
       //Act
       int userPriceOf3Loaves = 10;
       int result = newBread.SetBreadPrice(userNumberOfLoaves);
       // Assert
       Assert.AreEqual(userPriceOf3Loaves, result);
     }
-    // Tests
+  }
+
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void PastryClass_CreatesInstanceOfPastries_Pastry()
+    {
+      // Arrange/Act
+      Pastry newPastry = new Pastry();
+      // Assert
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
   }
 }

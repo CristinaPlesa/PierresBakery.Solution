@@ -47,9 +47,14 @@ namespace Bakery.Models
 
   public class Pastry
   {
+    public string PastryName { get ; }
+    public string Description { get ; }
+    public int Price { get ; }
     public Pastry(string pastryName, string description, int price)
     {
-      return;
+      PastryName = pastryName;
+      Description = description;
+      Price = price;
     }
   }
 }

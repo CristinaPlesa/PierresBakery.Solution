@@ -66,14 +66,14 @@ namespace Bakery.Test
     {
       // Arrange
       string testPastryName = "Galuste cu Prune";
-      string testDescription = "Traditional Romanian sweet Pastry. It is made from whole wheat flour and is braided in a circle. Traditionally this Pastry is made for special occasions, but we make it fresh daily!";
+      string testDescription = "Traditional Romanian dessert. It is made with prunes that are wrapped in potato dough and rolled in bread crumbs. They are served with dipping sugar. We make them fresh daily!";
       int testPrice = 2;
       //Act
       Pastry newPastry = new Pastry(testPastryName, testDescription, testPrice);
       // Assert
-      Assert.AreEqual(testPastryName, newPastry);
-      Assert.AreEqual(testDescription, newPastry);
-      Assert.AreEqual(testPrice, newPastry);
+      Assert.AreEqual(testPastryName, newPastry.PastryName);
+      Assert.AreEqual(testDescription, newPastry.Description);
+      Assert.AreEqual(testPrice, newPastry.Price);
     }
   }
 }

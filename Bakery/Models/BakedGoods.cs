@@ -30,7 +30,7 @@ namespace Bakery.Models
 
     public int SetBreadPrice(int userNumberOfLoaves)
     {
-      for(int i = 1; i < userNumberOfLoaves; i++)
+      for(int i = 1; i <= userNumberOfLoaves; i++)
       {
         if (i % 3 == 0)
         {
@@ -49,18 +49,40 @@ namespace Bakery.Models
   {
     public string PastryName { get ; }
     public string Description { get ; }
-    public int Price { get ; }
+    private int _price;
+    public int Price
+    { 
+      get
+      {
+        return _price;
+      }
+      set
+      {
+        _price = value;
+      }
+    }
 
     public Pastry(string pastryName, string description, int price)
     {
       PastryName = pastryName;
       Description = description;
-      Price = price;
+      _price = price;
     }
 
     public int SetPastryPrice(int userNumberOfPastries)
     {
-      return userNumberOfPastries;
+      for(int i = 1; i <= userNumberOfPastries; i++)
+      {
+        if (i % 3 == 0)
+        {
+          Price += 1;
+        }
+        else
+        {
+          Price += 2;
+        }
+      }
+      return Price;
     }
   }
 }

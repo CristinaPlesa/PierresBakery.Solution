@@ -40,9 +40,9 @@ namespace Bakery.Test
       string testDescription = "Traditional Romanian sweet bread. It is made from whole wheat flour and is braided in a circle. Traditionally this bread is made for special occasions, but we make it fresh daily!";
       int testPrice = 0;
       Bread newBread = new Bread(testBreadName, testDescription, testPrice);
-      int userNumberOfLoaves = 3;
+      int userNumberOfLoaves = 7;
       //Act
-      int userPriceOf3Loaves = 10;
+      int userPriceOf3Loaves = 25;
       int result = newBread.SetBreadPrice(userNumberOfLoaves);
       // Assert
       Assert.AreEqual(userPriceOf3Loaves, result);
@@ -84,9 +84,9 @@ namespace Bakery.Test
       string testDescription = "Traditional Romanian dessert. It is made with prunes that are wrapped in potato dough and rolled in bread crumbs. They are served with dipping sugar. We make them fresh daily!";
       int testPrice = 0;
       Pastry newPastry = new Pastry(testPastryName, testDescription, testPrice);
-      int userNumberOfPastries = 3;
+      int userNumberOfPastries = 8;
       //Act
-      int userPriceOf3Pastries = 5;
+      int userPriceOf3Pastries = 14;
       int result = newPastry.SetPastryPrice(userNumberOfPastries);
       // Assert
       Assert.AreEqual(userPriceOf3Pastries, result);

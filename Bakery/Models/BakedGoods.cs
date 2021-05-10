@@ -50,11 +50,17 @@ namespace Bakery.Models
     public string PastryName { get ; }
     public string Description { get ; }
     public int Price { get ; }
+
     public Pastry(string pastryName, string description, int price)
     {
       PastryName = pastryName;
       Description = description;
       Price = price;
+    }
+
+    public int SetPastryPrice(int userNumberOfPastries)
+    {
+      return userNumberOfPastries;
     }
   }
 }

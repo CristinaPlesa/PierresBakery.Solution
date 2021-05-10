@@ -75,5 +75,21 @@ namespace Bakery.Test
       Assert.AreEqual(testDescription, newPastry.Description);
       Assert.AreEqual(testPrice, newPastry.Price);
     }
+
+    [TestMethod]
+    public void SetPastryPrice_ReturnsCorrectPriceForMultipleInputtedPastries_Price()
+    {
+      // Arrange
+      string testPastryName = "Galuste cu Prune";
+      string testDescription = "Traditional Romanian dessert. It is made with prunes that are wrapped in potato dough and rolled in bread crumbs. They are served with dipping sugar. We make them fresh daily!";
+      int testPrice = 0;
+      Pastry newPastry = new Pastry(testPastryName, testDescription, testPrice);
+      int userNumberOfPastries = 3;
+      //Act
+      int userPriceOf3Pastries = 5;
+      int result = newPastry.SetPastryPrice(userNumberOfPastries);
+      // Assert
+      Assert.AreEqual(userPriceOf3Pastries, result);
+    }
   }
 }

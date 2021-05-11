@@ -86,11 +86,3 @@ namespace Bakery.Models
     }
   }
 }
-
-  // public class Pastry. Do the same for this class, create constructor, then create a few new object instances of different pastries. Must test bread one first tho. Will it work to have two classes in the same file?
-
-  // Like in To Do example do I have to create a list in order to be able to access multiple fields in constructor? Specifically in testing. 
-
-  // Comments for SetBreadPrice()
-      // will actually have to have if conditional, given that there is a buy 2 get 1 free deal. Each loaf costs $5.
-      // maybe it won't actually be a if conditional, but a loop that skips at every number divisible by 3. 
